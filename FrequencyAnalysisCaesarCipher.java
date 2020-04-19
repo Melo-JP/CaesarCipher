@@ -1,5 +1,3 @@
-package com.paulmelvin;
-
 import java.util.Arrays;
 import java.util.Scanner;
 
@@ -15,6 +13,7 @@ public class FrequencyAnalysisCaesarCipher {
 
         //Converts given string into character array
         char string[] = encryptedText.toCharArray();
+        Arrays.sort(string);
 
         for(i = 0; i <encryptedText.length(); i++) {
 
@@ -25,7 +24,7 @@ public class FrequencyAnalysisCaesarCipher {
 
                     //Set string[j] to 0 to avoid printing visited character
                     string[j] = '0';
-                 Arrays.sort(string);
+                
                 }
             }
         }
